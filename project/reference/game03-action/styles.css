@@ -1,0 +1,95 @@
+/* GENERAL STYLES
+- - - - - - - - - - - - - - - - - - - - - */
+body {
+  background: #ecf0f1;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+
+
+/* TYPOGRAPHY STYLES
+- - - - - - - - - - - - - - - - - - - - - */
+h1 strong {
+  display:block;
+  font-family: 'Ewert', cursive;
+  font-size: 90px;
+  font-weight: normal;
+  color: #B109AA;
+}
+
+p {
+  text-align: center;
+}
+
+
+/* TARGET SECTION STYLES (ALL)
+- - - - - - - - - - - - - - - - - - - - - */
+section {
+  animation-name: move;
+  animation-duration: 30s;
+  animation-delay: 1s;
+  animation-direction: forwards;
+  animation-timing-function: linear;
+}
+
+label {
+  background: #B109AA;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 15px #000000, inset 0 0 0 30px #ffffff; /* css trick: double border */
+}
+
+input:checked + label {
+  transform: rotateX(70deg); 
+}
+
+
+/* INDIVIDUAL TARGET STYLES
+change the size, shape, background, add more, etc
+- - - - - - - - - - - - - - - - - - - - - */
+label:first-of-type {
+  width: 140px;
+  padding-bottom: 140px;
+  background: url(http://placekitten.com/200/200); 
+  background-size: cover;
+  left: 0;
+}
+
+label:nth-of-type(2) {
+  width: 90px;
+  padding-bottom: 90px;
+  left: 5%;
+}
+
+label:nth-of-type(3) {
+  width: 120px;
+  padding-bottom: 120px;
+  background: url(http://placekitten.com/300/300);
+  background-size: cover;
+  left: 10%;
+}
+
+label:nth-of-type(4) {
+  width: 180px;
+  padding-bottom: 180px;
+  background: url(http://placekitten.com/400/400);
+  background-size: cover;
+  left: 15%;
+}
+
+label:nth-of-type(5) {
+  width: 100px;
+  padding-bottom: 100px;
+  left: 20%;
+}
+
+
+/* CSS ANIMATION KEYFRAME TO MOVE TARGETS
+- - - - - - - - - - - - - - - - - - - - - */
+@keyframes move {
+  to {
+      transform: translateX(-100%);
+  }
+}

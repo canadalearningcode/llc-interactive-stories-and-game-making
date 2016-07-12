@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Ladies Learning Code</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Takes care of CSS3 prefixes -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body class="en" data-duration="360">
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
+
+      <div class="instructions">
+        <!-- ADD WIFI INFO HERE -->
+        <h2>Get <br>Connected</h2>
+        <p><strong>Wifi:</strong> wifi network</p>
+        <p><strong>Password:</strong> wifi password</p>
+        <hr>
+
+        <h2>Download<br> & Install</h2>
+        <ol class="downloads">
+          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/interactive-stories-and-game-making/master.zip">[LINK]</a>
+            <ul>
+              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+              <li>open <em>slides.html</em> in the browser to view the slides</li>
+            </ul>
+          </li>
+          <li>Atom Editor: <a href="http://atom.io">http://atom.io</a></li>
+          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          </li>
+        </ol>
+      </div>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Content created by <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+
+    <section class="slide intro">
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
+      <h1 class="heading-bg">
+        <span>Interactive Stories and <br>Game Making<br>with HTML & CSS</span>
+      </h1>
+
+      <!-- FILL IN INSTRUCTOR DETAILS -->
+      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
+      <h2><span class="cursive">with</span> Instructor name</h2>
+      <ul>
+        <li><a href="mailto:">hello@email.com</a></li>
+        <li><a href="http://website.com">website.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <div class="sponsor">
+        <p>In partnership with<br> <img src="framework/img/shopify-logo-white.svg" alt="Telus"></p>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Content created by </a> <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Introductions
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Agenda
+
+        <div class="table-of-contents"></div> 
+
+        <!-- Intro + Example Projects + Guest Speaker (10am)
+
+        Project Ideation + Wireframing (10:15am)
+
+        Intro to HTML + CSS (10:45am)
+
+        Lunch (12:30pm)
+
+        Building time! (1:15pm)
+
+        Demos + Pushing Live (3:30pm) -->
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Why Game Making?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Impact of Digital Gaming
+        
+        This year, we are building upon our mission to teach 21st century skills through one of the most popular digital mediums: gaming.
+
+        <ul>
+          <li class="delayed">Powerful way to make your message, cause or idea stand out in our crowded online world</li>
+          <li class="delayed">According to the [Entertainment Software Association of Canada](http://theesa.ca/wp-content/uploads/2015/11/ESAC_2015_Booklet_Version02_14_Digital.pdf), over 54% of Canadians are considered "gamers"</li>
+          <li class="delayed">Of those 54%, approximately half of them are women</li>
+          <li class="delayed">Yet, women only make up ***3% of the tech industry*** responsible for building games</li>
+        </ul>
+
+      </script>
+    </section>
+    
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Let's Get Started!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Example Projects
+
+        Today, we'll have the chance to build games, interactive stories or quizzes that are centred on a cause, community or message you want to share like:
+
+        <ol class="examples">
+          <li>[Quiz](project/reference/game01-quiz/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span> </li>
+          
+          <li>[Choose Your Own Adventure](project/reference/game02-textadventure/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></li>
+          
+          <li>[Action Game](project/reference/game03-action/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><br>(Try this one after you've made either a quiz or story)</span></li>
+        </ol>
+
+        ##Notice anything about the structure of these examples? 
+        <p class="delayed">They are a combo of single **one-page sites** linked together to form a larger narrative.</p><!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Project Brainstorm
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown data-toc>
+      <script type="text/template">
+        <img src="framework/img/story-planning.JPG" alt="Story Planning">
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Brainstorm (30 Minutes)
+
+        Before we dive into code, it's important to take some time to plan out your project. Grab a pen and paper, bounce ideas off of your neighbour, and get creative!
+
+        <ul>
+          <li class="delayed">What **story** do you want to tell?</li>
+          <li class="delayed">What **cause** do you want to highlight?</li>
+          <li class="delayed">What do you want to **create**? An interactive story, game or quiz?</li>
+          <li class="delayed">What is the **journey** through your story, game or quiz?</li>
+          <li class="delayed">What unique **pages** do you need?</li>
+        </ul>
+
+        <p class="delayed">Consider the narrative and how users will explore your story, game or quiz. Refer back to <a href="slides.html#slide8">slide 8</a> for examples.
+
+        ---
+        ###Resources
+        * [Everybody Wants to be a Cat](http://play.textadventures.co.uk/Play.aspx?id=l7behin2oewdjiyyluan8w)
+        * [Robin Hood](http://play.textadventures.co.uk/Play.aspx?id=kybrmvp890ofqeqrmjj9-g)
+        * [Magical High School](http://play.textadventures.co.uk/Play.aspx?id=xqc_5q0wee_sxs8vkorenq)
+        * [Horror Mystery](http://adamcadre.ac/if/905.html)
+      </script>
+    </section>
+
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Coding Enviroment
+        ##Web Browsers +  Text Editors
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Web Browsers
+
+        The main functionality of the [browser](http://browsehappy.com) is to present a *web resource* in the browser window.
+
+        Choose a modern web browser that supports current web standards and dev tools for a better experience.
+
+        In [Google Chrome](https://www.google.com/intl/en-CA/chrome/browser/) (and in other browsers), you can view the source of *any* web page. Right-click / two-finger tap anywhere on the browser and select **View Web Source**. That&rsquo;s HTML!
+
+        ---
+        ###Resource
+        http://browsehappy.com
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Developer Tools
+
+        **Chrome Developer tools** take it a step further and allows you to *inspect* any web page, making it easier to test & debug code. The tools can be accessed in a couple ways:
+
+        * Option 1: right-click / two-finger tap on a web page and select **Inspect Element**
+        * Option 2: **Ctrl + Shift + I** (PC) / **Cmnd + Option + I** (Mac)
+
+        ---
+        ###Resources
+        * To set Chrome as your default browser, follow [these instructions](https://support.google.com/chrome/answer/95417?hl=en).
+        * More about dev tools: http://discover-devtools.codeschool.com
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Text Editor
+
+        * used to write and edit code
+        * preinstalled editors (Notepad / TextEdit) don't include many features
+        * paid and free options include features such as colour highlighting and plugins for improving workflow
+        * some great options: [Notepad++](http://notepad-plus-plus.org/), [Sublime Text](http://www.sublimetext.com/) (untimed free trial), [Brackets](http://brackets.io) and [TextWrangler](http://www.barebones.com/products/textwrangler/).
+
+        **[Atom](https://atom.io/)** is totally free and is the editor we'll be using today.
+        <span class="note">(If you have another editor installed, it will work as well but some features may be different.)</span>
+
+        ---
+        ###Pro tip!
+        Improve your work flow with [keyboard shortcuts](http://ladieslearningcode.com/downloads/keyboard-shortcuts.pdf).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Getting to know Atom
+
+        Having a good text editor and learning how to use it to its full potential will help your work flow. Today, let's update the text wrapping option to make it easier to read long blocks of code and text.
+
+        Go to **Preferences** to open the customization options.
+
+        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
+
+        The **Settings** tab will show by default. Scroll down to **Soft Wrap** option.
+
+        ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+
+        Make sure the **Soft Wrap** option is checked.
+
+        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+
+        ---
+        ###Resources
+
+        *   [Atom documentation](https://atom.io/docs)
+        *   [Atom Shortcuts cheat sheet](https://bugsnag.com/blog/atom-editor-cheat-sheet)
+        *   [Customizing Atom](https://atom.io/docs/v0.61.0/customizing-atom)
+        *   [Themes](https://atom.io/themes) for Atom
+        *   [Snippets](https://github.com/atom/snippets) - create your own code snippet shortcuts
+      </script>
+    </section>
+
+
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Intro to HTML
+        ##HyperText Markup Language
+      </script>
+    </section>
+
+    <section class="slide side-by-side" data-markdown>
+      <script type="text/template">
+        #HTML & CSS
+
+        This is how the Ladies Learning Code site looks like with & without CSS!
+
+        ![](framework/img/workshop/llc-no-css.jpg)
+        ![](framework/img/workshop/llc-css.jpg)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #HTML Syntax
+
+        Tags are written with angled brackets `< >` and a forward slash `/` for the closing tag. Get to know these keys!
+
+        ![keyboard keys](framework/img/workshop/keyboard-html.png)<!-- .element: width="70%" -->
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #HTML: The content layer
+
+        Tags usually come in pairs &mdash; an opening tag and a closing tag &mdash; to *wrap* the content.  Note the closing tag has a forward slash (`/`).
+
+        ```
+        <tag> opening tag --- closing tag </tag>
+        ```
+
+        HTML *tags* describe the content inside of them to the web browser.
+        ```
+        <h1>This tag describes a heading</h1>
+        <p>This tag is for paragraphs.</p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Nested tags
+
+        Tags can be *nested* within other tags like this:
+
+        ```
+        <outertag>outer content <innertag>inner content</innertag> outer content</outertag>
+        ```
+
+        Nested tags create a family tree-like relationship, often referred to as *parent* and *child* nodes.
+
+        The inner tag is the child of the outer tag.
+
+        ```
+        <parent>
+          <child></child>
+        </parent>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Organizing your code
+
+        HTML was created for web browsers to read (not humans) so this makes perfect sense to a web browser:
+
+        ```
+        <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title></title></head><body></body></html>
+        ```
+
+        But for us, using whitespace through indentation (tabs) will makes HTML easier to read. When nesting a tag, add one tab space.
+
+        ```
+        <outertag>
+          <innertag>
+          </innertag>
+        </outertag>
+        ```
+      </script>
+    </section>
+
+    <section id="basic-tags" class="slide" data-markdown>
+      <script type="text/template">
+        #Base HTML Tags
+
+        The tags below should be included in ** *all* ** HTML documents.
+
+        ```
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <title></title>
+          </head>
+          <body>
+            <!-- page content here (this is an HTML comment by the way) -->
+          </body>
+        </html>
+        ```
+        (We'll be going through what these tags mean very soon.)<!-- .element: class="note" -->
+
+        To create an HTML page, just save it with the file extension `.html`.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Setting up your project
+
+      Inside of the folder you downloaded today, open the **project** folder in your text editor to edit your project.
+
+      ```html
+      llc-interactive-stories-and-game-making
+        |-- framework // Contains files needed for slide presentation. Do not edit!
+        |-- project // Contains the exercise files for this workshop. (images, CSS & HTML)
+        |-- slides.html // This is the file you are viewing right now!
+      ```
+
+      Go to **File** > ** Add Project Folder**. A popup will appear.
+
+      ![](framework/img/workshop/editor-add-project-1.jpg)
+
+      Then:
+
+      * navigate to the **llc-interactive-stories-and-game-making** folder
+      * select **project**
+      * click **Open**
+
+      The files will now appear in the sidebar.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Setting up your project
+
+        Your project folder structure will look like this:
+
+        ```html
+        project
+          |-- images
+          |-- reference
+        ```
+        
+        The **project** folder is where each part of your story will live.
+
+        The **images** folder contains a selection of images to use in your project (or add your own to this folder during the exercises).
+
+        The **reference** folder contains the solutions for exercises and the sample projects.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise #1: Create your project's start page (5 min)
+
+        1. In the text editor, create a new file (**File** > **New File**)
+        1. Save it as `start.html` (**File** > **Save**)
+        1. Add all of the basic HTML tags. Refer to [this slide](slides.html#basic-tags) for reference.
+        1. In *between* the `<title></title>` tags, add a *page title* that reflects the content of your webpage. Example:
+          ```
+          <title>Choose Your Own Adventure</title>
+          ```
+        1. Open `start.html` in the browser.
+          * go to Windows Explorer or Finder
+          * navigate to the **llc-interactive-stories-and-game-making > project** folder
+          * double click on **start.html** to open it in your default browser
+          <br><span class="note">(If Chrome is not your default, right-click/two-finger tap on **start.html** and choose **Open With > Chrome**)</span>
+
+        There is no page *content* yet so the browser will show a blank page. The page *title* however, will show in the browser toolbar.
+
+        ![exercise 1 example](framework/img/exercise-01-example.png)
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #The Doctype
+
+        * not an HTML tag & must be the first item
+        * tells the browser what HTML version the page is written in
+        * the below example is the HTML5 doctype
+
+        <pre><code><strong>&lt;!DOCTYPE html&gt;</strong>
+        &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;!-- page content here --&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #THE HTML ELEMENT
+
+        * always the first HTML tag & identifies the document as HTML
+        * it is the root element & ancestor of all other elements because everything is *nested* inside
+        * the `lang` *attribute* classifies the language (more on attributes soon)
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        <strong>&lt;html lang=&quot;en&quot;&gt;</strong>
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;!-- page content here --&gt;
+          &lt;/body&gt;
+        <strong>&lt;/html&gt;</strong>
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #The HEAD ELEMENT
+
+        * includes information about the page but *does not display content*
+        * the `<title></title>` element is the only required element
+          * defines the title of the web page/document
+          * displayed in the browser tab, bookmarks and search engine results
+        * CSS, JavaScript & [metadata](searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags) can also be included here
+        * page content *never* goes here
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+          <strong>&lt;head&gt;</strong>
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;My page title&lt;/title&gt;
+          <strong>&lt;/head&gt;</strong>
+          &lt;body&gt;
+            &lt;!-- page content here --&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #THE BODY ELEMENT
+
+        All content to be displayed in the browser window goes between the `<body></body>` tags.
+
+        Also known as the *viewport*.
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;My page title&lt;/title&gt;
+          &lt;/head&gt;
+          <strong>&lt;body&gt;</strong>
+            &lt;!-- page content here --&gt;
+          <strong>&lt;/body&gt;</strong>
+        &lt;/html&gt;
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributes
+
+        * provides additional information or instruction for the element
+        * included *inside the opening HTML tag*
+        * follows the syntax of `attribute="value"` (note the quotes)
+        * many different attributes
+
+        ```
+        <tag attribute="value">content</tag>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributes
+
+        We just saw two attributes in our basic HTML page example.
+
+        The `lang` attribute is used to classify the language.
+
+        ```
+        <html lang="en">
+        ```
+
+        The `charset` attribute sets the character encoding.
+        ```
+        <meta charset="UTF-8">
+        ```
+
+        We will be using more attributes throughout today's exercises.
+      </script>
+    </section>
+
+    <section class="slide page-layout" data-markdown>
+      <script type="text/template">
+        # PLANNING THE PAGE LAYOUT
+
+        An important part of creating a web page is planning the page structure. Though you will likely make changes as you go along, creating a basic layout with [semantic](http://html5doctor.com/lets-talk-about-semantics/) markup is a good way to start.
+
+        If you don't have a design to work from, many developers and designers like to start planning with a simple sketch.
+
+        <img src="framework/img/workshop/structure-tags-example.gif" alt="Structure Tags example">
+
+        HTML5 introduced new tags to better describe blocks of content such as `<header>`, `<section>` and `<footer>`. (There are many more.)
+
+        The `div` tag can still be used when needed for purely grouping elements together for styling or when no other HTML5 tag properly describes the element.
+
+        ----
+        ###Resources
+        * [html5doctor.com](http://html5doctor.com)
+        * [HTML5 Element Flowchart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise #2: Page structure (5 minutes)
+
+        Back in the text editor, let's add the HTML5 structural tags to setup the page layout.
+        Only add the structural HTML blocks in this step, no content just yet.
+
+        We will need these tags: `<header>`, one `<section>`'s and a `<footer>`
+
+        Also, you can use HTML comments to help organize the code like so:
+
+        ```
+        <!-- page header -->
+        <header>
+
+        </header>
+        ```
+        View <!-- .element: class="note" --> `exercise-02.html` in your **reference** folder or the previous slide to check your code.
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      #Adding content
+      ##Paragraphs, Headings, images and links
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Paragraphs
+
+        **Paragraphs**: whether it&#39;s one sentence or more, each paragraph needs its own pair of `<p></p>` tags.
+
+        ```xml
+        <p>This is a paragraph.</p>
+
+        <p>This is a longer paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero dolor expedita quasi reiciendis minus unde sapiente id eveniet saepe officia quibusdam aspernatur, sint voluptate ipsam ex magni. Aliquam, ex!</p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Headings
+
+        There are six headings tags ranging from `<h1>` to `<h6>` used to describe the *hierarchy* of the page structure. To decide which heading to use, think about how you would arrange an essay outline.
+
+        <div class="example essay-headings">
+        <p><strong>Essay Title</strong></p>
+        <ol>
+         <li>Introduction</li>
+         <li>First supporting idea
+           <ul>
+             <li>point 1</li>
+             <li>point 2</li>
+           </ul>
+         </li>
+         <li>Second supporting idea
+           <ul>
+             <li>point 1</li>
+             <li>point 2</li>
+           </ul>
+         </li>
+         <li>Conclusion</li>
+        </ol>
+        </div>
+
+        Let's look at how we could describe this hierarchy using heading tags.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercise #3: Add Content (10mins)
+
+        Add some text-based content for the opening page of your story, game or quiz. Images & links will also be covered next.
+
+        1. Add your title & tagline in the `<header>` section using the appropriate heading tags.
+          <span class="note">(**Reminder!** `<head>` and `<header>` are two different tags.)</span>
+        1. In the `<section>`, add a heading and a few paragraphs.
+          <span class="note"><br>Don&#39;t have content to add? Use placeholder text! See resources below.</span>
+        1. In the `<footer>`, add a paragraph.
+
+        ---
+        ###Resources
+        * http://meettheipsums.com
+        * http://thewireipsum.com
+        * http://tinaipsum.rocks
+        * http://www.quotes.net
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Self-closing tags and images
+
+        Self-closing tags don't format content or require a closing tag. They are used to embed objects onto the page; they *are* the content.
+
+        Images use a self-closing tag. It also requires a `src` *attribute* to tell the browser the location of the image file.
+
+        ```
+        <img src="path/to/image/file-name">
+
+        ```
+
+        `alt` is another attribute that is added to images to provide *alternative text* to visually impaired web visitors using screen readers.
+
+        ```
+        <img src="http://placekitten.com/200/300" alt="kitten!">
+
+        ```
+
+        ##Example of `alt` when image does not load:
+        <img src="" alt="kitten!">
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Image file types
+
+        **gif** - smaller file size when used for line art, charts, and images with minimal colour variation. <span class="note">(That's why animated gifs tend to look grainy but oh so fun!)</span>
+
+        **jpg** - smaller file size when used for photographs with lots of rich colours or gradients
+
+        **png** - larger file size but has the best quality and is great for images with transparent backgrounds
+
+        **svg** - XML-based vector image format for 2D graphics with support for interactivity and animation
+
+        ---
+        ###Resource
+        [Here's a big list of image placeholder sites](http://www.wpfreeware.com/tutorial/placeholder-images-generator-service-web-designers/).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Image file paths
+
+        It's best practice (but not required) to put image files into its own folder to keep the project files organized.  Today's **project** directory already includes an **images** folder.
+
+        Since the images are not in the same folder as **start.html**, use a *relative* path to link to the file.
+
+        ```
+        <img src="images/image-file.jpg">
+        ```
+        The starting point (**start.html**), is outside of the **images** folder. The above example directs the browser to a folder named **images**, then the filename, *including the file extension*.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Image file paths
+        If you have a folder in a folder, then add the subfolder into the path.
+
+        ```
+        <img src="folder/sub-folder/filename">
+        ```
+
+        If your file extensions do not show by default, here are instructions for [Mac](https://support.apple.com/kb/PH19072?locale=en_US) and for [Windows](http://windows.microsoft.com/en-ca/windows/show-hide-file-name-extensions#show-hide-file-name-extensions=windows-7).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Hyperlinks
+
+        A hyperlink references data, such as a web document, that the reader can directly follow, usually by clicking or hovering.
+
+        Use the anchor tag, `<a>` to create the link. It also needs an `href` attribute to provide information for the location of the resource.
+
+        ```xml
+        <a href="http://ladieslearningcode.com">Ladies Learning Code</a>
+        ```
+
+        To set the link to open in a new window, add a second attribute, `target`.
+        ```xml
+        <a href="http://ladieslearningcode.com" target="_blank">Ladies Learning Code</a>
+        ```
+
+        Here's the syntax for an email link.
+        ```xml
+        <a href="mailto:hello@myemail.com">hello@myemail.com</a>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercise #4: Add links and images (15mins)
+
+        1. Add a home page image (remember `alt` text!)
+        1. Create a second .html file in your **project** folder. You can copy and paste the structure from the first one or 'duplicate' it. Rename it something *other than* start.html
+        1. Create a link from your `start.html` to your new .html file
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Intro to CSS
+        ##Cascading Style Sheets
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS: The presentation layer
+
+        * different language from HTML
+        * stylesheet language with its own syntax rules
+        * used to separate content (HTML) from presentation (CSS)
+        * stylesheet contains a list of rules
+
+        CSS requires these symbols: curly brackets `{ }`, colon `:`, semi-colon `;`
+
+        ![keyboard](framework/img/workshop/keyboard-css.png)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS Syntax & Terminology
+
+        **Selectors:** determines which HTML element(s) to apply the styles to.
+        **Declarations:** style rules written in `property:value` pairs, are wrapped by curly brackets `{ }` and must end with a semi-colon `;`
+
+        ```
+        selector {
+          property: value;
+        }
+        ```
+        **Properties** determine the *type* of style to be applied (e.g. color). **Values** are specific to the property (red).
+        ```
+        p {
+          color: red;
+        }
+        ```
+        >In the above example, what is the selector? Property? Value?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Multiple CSS Declarations
+
+        Multiple declarations can be added to one selector. Just be sure to end each declaration with a semi-colon and write them on a separate line for readability.
+
+        ```
+        h2 {
+          background-color: green;
+          font-size: 50px;
+        }
+        ```
+        There are many, many CSS properties. New ones are added as old ones being retired (deprecated).  It's good to have a few resources on hand.
+
+        ---
+        ###Resources
+        * http://caniuse.com
+        * https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+        * http://htmldog.com/reference/cssproperties/
+      </script>
+    </section>
+
+    <section class="slide">
+      <h1>Practice Selecting an element</h1>
+      <p>Using the HTML example below, change the “selector” to apply the instructions in the comments.</p>
+<pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;h2&gt;This is an h2.&lt;/h2&gt;
+</code></pre>
+<textarea class="snippet" data-subject="#css-selectors">selector { /* select the paragraph */
+  color: red;
+}
+selector { /* select the heading */
+  color: blue;
+}</textarea>
+      <div id="css-selectors" class="example">
+        <p>This is a paragraph</p>
+        <h2 style="margin-top:0;">This is an h2</h2>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Referencing CSS
+
+        Today, we&#39;ll be creating a separate style sheet file for the CSS.  To create a stylesheet, just name the file with a `.css` file extension.
+
+        The style sheet is then referenced within the `<head>` of the HTML document (different tag from `<header>`).
+
+        Use `<link>` tag and two *attributes*, `rel` and `href`.
+
+        ```
+        <head>
+          <title>Page Title</title>
+          <link rel="stylesheet" href="css/style.css">
+        </head>
+        ```
+
+        Though not required, css files are often saved in a separate folder for organization, just like images. <!-- .element: class="note" -->
+
+        ---
+        ###Resource
+        There are several ways to add CSS. Read more about the difference ways to reference CSS <!-- .element: class="footnote" -->[here](http://reference.sitepoint.com/css/linkingcss).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise: Create your project's CSS File
+
+        1. In the text editor, create a new CSS file by selecting **File > New File**.
+        1. Name it **styles.css** and save it the root folder (same level as your **start.html** file).
+        1. Then, reference it in **start.html** and the second html file you just created. <span class="note">**Pro tip!** Type `link` and press tab!</span>
+          ```
+          <head>
+              <link rel="stylesheet" href="styles.css">
+          </head>
+          ```
+        1. Run a test by adding a background color to the viewport (`body`).
+          ```
+          body {
+            background: lightblue;
+          }
+          ```
+      </script>
+    </section>
+
+    <section class="slide first-website" data-markdown>
+      <script type="text/template">
+        <div class="text">
+          <h1>Ta-da!</h1>
+          <p>
+            You just created a website. HTML + CSS = website
+          </p>
+        </div>
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Now, let's jazz it up <br>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS colours
+
+        * **keywords** - use the actual name
+        (e.g. `red`, `green`, `blue`, `pink`, `papayaWhip`, `paleGoldenrod`, etc)
+        * **RGB** - uses 3 numerical values between `0` (black) and `255` (white)
+        * **hex code** - number sign (`#`) followed by six characters (0-9, A-F)
+
+        ```
+        /* These are all the same colour - this is also a CSS comment by the way! */
+        p {
+          background: firebrick;
+          background: rgb(178,34,34);
+          background: #B22222;
+        }
+        ```
+
+        ---
+        ###Resources
+        * http://colours.neilorangepeel.com
+        * http://coolors.co
+        * http://wesandersonpalettes.tumblr.com
+        * http://www.colorpicker.com
+        * http://www.colourlovers.com
+        * http://flatuicolors.com
+        * http://color.hailpixel.com
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Background colours
+
+        Adding background colours to sections of the page is not only a design convention, it can  also help to visualize the HTML blocks of content.
+
+        In the final sample project, the `<footer>` uses a grey background colour.
+
+        > What selector should be used to apply this style?
+
+        <pre class="delayed"><code>footer {
+
+        }</code></pre>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS Font Styles
+
+        The are quite a few CSS properties for styling text.  Here's a few to discuss today. Change some values below to see what happens!
+
+        <textarea class="snippet" data-subject="#css-type">color: slateblue;
+        font-family: Helvetica, Arial, serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.25;
+        text-transform: lowercase;</textarea>
+
+        <div id="css-type" class="example">
+          <p>Just some text to test out the above styles. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellat sunt quae fugit illum in aut sed, quis nesciunt totam veritatis, dolores alias modi fuga commodi dicta facilis, consequatur temporibus.</p>
+        </div>
+
+        ###Resource
+        [Sitepoint Typographical Properties](http://reference.sitepoint.com/css/typography)
+
+        <div class="presenter-notes">
+          <p>Explain what each property does while updating each example in the code editor. Talk about the difference between using line-height with and without a measurement unit.</p>
+        </div>
+      </script>
+    </section>
+
+    <section class="slide nested-list" data-markdown>
+      <script type="text/template">
+        #Web safe fonts
+
+        Web safe refers to pre-installed fonts.  Operating systems do not have the same defaults, so use a font *stack* to provide fallback options.
+
+        ```
+        font-family: Helvetica, Arial, serif;
+        ```
+
+        * Some common "web safe" are:
+          * <span style="font-family:Arial;">Arial</span>
+          * <span style="font-family:Verdana;">Verdana</span>
+          * <span style="font-family:Times New Roman;">Times New Roman</span>
+          * <span style="font-family:Georgia;">Georgia</span>
+          * <span style="font-family:Courier;">Courier</span>
+
+        To see a complete list, check out <http://www.cssfontstack.com>.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise: Using Google Fonts
+
+        1. Go to [Google Fonts](http://www.google.com/fonts).
+        1. **Add to Collection** to select a font.
+        ![](framework/img/workshop/google-fonts-1.jpg)
+        1. Select **Use** to get the code. <span class="note">(You can change your selections in the next exercise.)</span>
+        1. Select font weights. <span class="note">The more you choose, the more it will slow down page load time.</span>
+          * The default character set should contain what you need.
+        1. Copy the `<link>` code snippet and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
+          ```
+          <head>
+            <meta charset="UTF-8">
+            <title>Create Your Own Adventure</title>
+            <link href='https://fonts.googleapis.com/css?family=Passion+One:700,400|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="styles.css">
+          </head>
+          ```
+
+        Now you're ready to use the new fonts. Use the font-family name listed in the Google Fonts page.
+
+        ```
+        font-family: 'Open Sans', sans-serif;
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Inheritance and Specificity
+
+        A strength of CSS is styles can be inherited from parent to child elements. Let's review the family tree structure between the elements.
+
+        ```
+        <body><!-- parent of h1 and p -->
+          <h1>My Website</h1><!-- child of body, sibling of p -->
+          <p>This is a paragraph.</p><!-- child of body, sibling of h1 -->
+        </body>
+        ```
+
+        CSS properties in the `body` selector is inherited by the descendant elements. A more specific selector will override the inherited values.
+        ```
+        body {
+          color: #222222;
+        }
+        h1 {
+          color: blue; /* overrides the inherited style */
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise #5: Typography
+
+        (Make sure the Google Font stylesheet has been added to your HTML page to use the fonts.)<!-- .element: class="note" -->
+
+        Let&#39;s add the base font to the `body` element, so all the descendant elements can inherit this style.
+
+        Change the `font-weight` to a thinner or thicker font (optional).
+
+        ```
+        body {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 300;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise #5: Typography (continued)
+
+        Let&#39;s set a different font for only the headings.
+
+        To target multiple selectors at the same time, you can *combine* selectors with a comma.
+
+        ```
+        h1,
+        h2 {
+          font-family: 'Passion One', cursive;
+          font-weight: 400;
+        }
+        ```
+        Your page should now look like `exercise-04.html` in the reference folder. Also check `exercise-04.css` to see the stylesheet.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Block and Inline Elements
+
+        By default, some HTML elements are **block** or **inline** elements.
+
+        ##Block Elements
+        *   takes up 100% width of its container
+        *   can apply sizing related CSS to it (margin, padding, height, width)
+
+        <textarea class="snippet" data-subject="#block">background: lightblue;
+        padding: ;
+        margin: ;
+        width: ;
+        height: ;</textarea>
+        <div id="block">I'm a block element.</div>
+      </script>
+    </section> 
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Block and Inline Elements
+
+        ##Inline Elements
+        *   will be width of its content
+        *   always appears “in a line” with other inline level elements
+        *   does not render CSS height and width at all
+        *   will apply margin and padding but with unexpected results
+
+        <textarea class="snippet" data-subject="#inline">background: orange;
+        padding: ;
+        margin: ;
+        width: ;
+        height: ;</textarea>
+        <span id="inline">I'm an inline element.</span> 
+      </script>
+    </section> 
+
+    <section id="margin-padding" class="slide" data-markdown>
+      <script type="text/template">
+        #Margin and Padding
+
+        The values for both `margin` and `padding` can be declared using 1 to 4 values, to target different sides of the element. A variety of measurement units (px, %, ems, rems, etc) can be used.
+
+        Setting the value to "0" will *remove* any default space and any positive value will *add* space.
+
+        Margin can also use negative values. Padding cannot.
+
+        ```css
+        padding: 2px 10px 2px 10px; /* top, right, bottom, left */
+        padding: 2px 10px 2px; /* top, right & left, bottom */
+        padding: 2px 10px; /* top & bottom, right and left */
+        padding: 2px /* all sides have the same value */
+        ```
+        ```css
+        margin: 2px 10px 2px 10px; /* top, right, bottom, left */
+        margin: 2px 10px 2px; /* top, right & left, bottom */
+        margin: 2px 10px; /* top & bottom, right and left */
+        margin: 2px /* all sides have the same value */
+        ```
+      </script>
+      </section>
+
+      <section class="slide" data-markdown>
+      <script type="text/template">
+        #Margin and Padding
+
+        Both margin and padding can also used the longhand property to target a specific side.
+
+        ```css
+        margin-top: 2px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        ```
+
+        ```css
+        padding-top: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+        ```
+      </script>
+    </section>
+
+    <section class="slide">
+      <h1>Practice!</h1>
+
+      <p>Practice using margin and padding below, using 1 to 4 values.</p>
+      <textarea class="snippet" data-subject="#example">background: lightblue;
+padding: 0px;
+margin: 0px;</textarea>
+      <div id="example" class="example">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nesciunt sint beatae dolor dolorum aliquid quis explicabo vitae numquam, quas illo dolore molestiae ratione, perferendis, deleniti nemo ea voluptatibus! Quibusdam.</p>
+      </div>
+
+      <p>Notice that the background colour doesn't flow into the space created by <code>margin</code>, since margin adds space <strong>around</strong> and <strong>outside</strong> of the element.</p>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #BUT WAIT - THERE'S MORE!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Being more specific - Using a Class
+        
+        Remember when we saw the `lang` and `charset` attributes? Well there's a really handy one we can use - the `class` attribute.  
+        
+        The value of the `class` is defined by you!  And it can be added to any tag to attach extra identifying information.
+        
+        ```xml
+        <img class="profile-img" src="images/profile.jpg" alt="Your Name">
+        ```
+        ```css
+        img {
+          /* all images */
+        }
+        .profile-img {
+          /* any element with the class of 'profile-img' */
+        }
+        ```
+        
+        Note that to use the `class` as a selector, it must start with a period, followed by class name with no spaces.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Descendant selectors
+
+        Matches any element that is a descendant (nested tag) of another element.
+
+        This is useful when targeting elements inside of a specific block of content (e.g. an `h1` in the `header`).
+
+        Note the space in *between* each selector. This is a requirement.
+
+        ```css
+        p a {
+          /* targets only anchor link tags nested inside of a p tag */
+        }
+        ul li a {
+          /* targets a link nested in a list item in an unordered list */
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Descendant selectors
+
+        **Pro tip!** Just like [Inception](http://www.imdb.com/title/tt1375666/), avoid going more than three levels.
+
+        ```
+        nav ul li a {
+          /* NOOOOOOOOOOO */
+        }
+        ```
+
+        You can skip a level but specificity rules apply.
+
+        For example, `nav ul li a` would override `nav a` because it&#39;s more specific.
+
+        It&#39;s generally better to start with generic selectors and make them more specific, as needed.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+        #Class Exercise - Style The Header
+
+        Let's add some specific styles to the header, to set it apart from the rest of the page.  We can't use `h1` or `h2` by itself since it will select all of them on the page so use *descendant selectors* instead.
+
+        ```xml
+        <header>
+          <h1>A Ladies Learning Code Mystery</h1>
+          <h2>Where Are All the Women in Tech?</h2>
+        </header>
+        ```
+
+        ```
+        header h1 {
+          color: #B109AA;
+          font-size: 60px;
+          margin-bottom: 20px;
+        }
+
+        header h2 {
+          font-size: 40px;
+          margin-top: 0;
+        }
+        ```
+
+      </script>
+    </section>
+
+<!--     <section class="slide" data-markdown>
+      <script type="text/template">
+        #border-radius
+
+        CSS3 introduced some new properties such as `border-radius`, used to make rounded corners or perfect circles, removing the need to manipulate image files.
+
+        The value can be set using various measurement units.
+        Let's look at how we can use `px` and `%` in the examples below.
+
+        <div class="group">
+          <div class="col-2">
+            <textarea class="snippet" data-subject="#rounded">border-radius: 15px;</textarea>
+
+            <img id="rounded" src="project/reference/images/robots.jpg" alt="doughnuts" width="150">
+          </div>
+
+          <div class="col-2">
+            <textarea class="snippet" data-subject="#circle">border-radius: 50%;</textarea>
+
+            <img id="circle" src="project/reference/images/robots.jpg" alt="doughnuts" width="150">
+          </div>
+        </div>
+
+      </script>
+    </section> -->
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Pseudo class & hover effects
+
+        It's common to apply a hover style to links. Use CSS *pseudo-class*, `:hover` to accomplish this.  This keyword is *attached* to a selector and specifies a *state* of the element, using a colon and **no** space.
+
+        <textarea class="snippet" data-subject="#hover">a {
+          padding: 10px;
+        }
+        a:hover {
+          border: 1px solid black;
+          background: red;
+          color: white;
+        }</textarea>
+        <a id="hover">I'm a link!</a>
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Creating our interactive stories, games and quizzes
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Now that we've made one simple site...
+
+        Think of your story, game or quiz as a series of multiple pages linked together.
+
+        <ul>
+          <li class="delayed">What **other pages** do you need to create in your narrative?</li>
+          <li class="delayed">What **hyperlinks** will you use to allow users to navigate your project?</li>
+          <li class="delayed">What is the over all **"look and feel"** of your project?</li>
+        </ul>
+
+        <p class="delayed">Trying to do something in CSS but not sure how? <br><br>Be sure to check the [Mozilla Developer Network List of CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) for more info, or flag down one of our mentors!</p>
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Game Jam Time!
+        ##get creative, have fun, work together!
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Bonus Exercise: <br>Make the Action Game!
+        ##or skip ahead to <a href="#next-steps">next steps</a>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Some more Advanced CSS
+
+        If you've already created your text-based adventure game or quiz, challenge yourself to create a carnival game similar to the [action game](project/reference/game03-action/start.html) included in the reference folder.
+
+        If you get stuck, flag down a mentor for help or work with a partner.
+
+        Building this game will involve some more advanced CSS concepts:
+
+        <ul>
+          <li class="delayed">Use of HTML `input` and `label` to create clickable areas</li>
+          <li class="delayed">More pseudo classes</li>
+          <li class="delayed">CSS Transforms</li>
+          <li class="delayed">CSS Animations using Keyframes</li>
+        </ul>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CREATE THE ACTION GAME
+
+        Since this is a more advanced project, it is recommended that you **duplicate** the entire `game03-action` folder from inside the reference folder and modify the existing files we provide for you.
+
+        <img src="framework/img/duplicate.gif" alt="duplicate the project folder">
+
+        Looking through a completed project and modifying it until it's your own is a great way to learn advanced topics.
+
+        This project also contains two stylesheets - only modify the `styles-advanced.css` file if you are feeling very confident or have the help of a mentor. 
+        
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Let's Take A Closer Look
+
+        Open up the `start.html` file and look inside the **body** tags:
+        ```
+          <header>
+            <h1>The Learn To Code Day <strong>Carnival!</strong></h1>
+          </header>
+          
+          <section>
+
+            <input type="radio" id="target1"/><label for="target1"></label>
+            <input type="radio" id="target2"/><label for="target2"></label>
+            <input type="radio" id="target3"/><label for="target3"></label>
+            <input type="radio" id="target4"/><label for="target4"></label>
+            <input type="radio" id="target5"/><label for="target5"></label>
+
+          </section>
+
+          <footer>
+          </footer>
+        ```
+
+        <p>There are definitely some similarities here. We have a `header`, `section` and `footer`, but...</p>
+        <ul>
+          <li class="delayed">The section contains HTML tags we haven't seen yet: `input` and `label`</li>
+          <li class="delayed">The footer is empty (on purpose)</li>
+        </ul>
+    
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #INPUTS AND LABELS
+
+        You typically cannot do click interactions with just HTML and CSS - this is usually handled with JavaScript or jQuery (a JavaScript library). One way developers get around this is to "hack" existing HTML tags that are used in [online forms](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form).
+
+        The key thing to note for today's project is the `id` attribute on the `input` tag...
+
+        ```
+        <input type="radio" id="target1"/>
+        ```
+
+        ...corresponds to the `for` attribute on the `label` tag:
+
+        ```
+        <label for="target1"></label>
+        ```
+
+        It's very important that they match in order for this to work.
+
+        Do you notice anything else about the `input` tag that makes it unique?
+
+        It's<!-- .element: class="delayed" --> a **self-closing** HTML tag.
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Labels
+
+        In our project, the `label` is important, as it dictates the way our targets **look**.
+
+        Let's take a look at the CSS for labels:
+        ```
+        label {
+          background: #B109AA;
+          border-radius: 50%;
+          box-shadow: inset 0 0 0 15px #000000, inset 0 0 0 30px #ffffff;
+        }
+        ```
+
+        * The default `background` of all our targets is purple
+        * Our targets are circular - have a `border-radius` of 50%
+        * We've used a new css property called `box-shadow` to trick CSS into giving us a double border on our targets. Change the pixel values and hex codes and see what happens!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Inputs: Radio Buttons
+
+        The `input` element is used to create interactive controls for forms.
+
+        There are [many different types of inputs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) that you can use. Today, we are using an input with the `type` attribute of `radio`.
+
+        A **radio button** is used in forms for making multiple choice selections where the user can only choose one answer.
+
+        This is the opposite to **checkboxes** where you can choose multiple answers. 
+
+        <img src="framework/img/input-types.png" alt="Radio vs Checkbox">
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #PSEUDO CLASS :checked
+
+        Remember when you hover over an element, you can target that element in CSS using the pseudo class `:hover`?
+
+        Well, you can do the same thing when you click a **radio button**, except it gains the pseudo-class of `:checked` in CSS.
+
+        More on `:checked` in a few slides...
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #PSEUDO CLASS :nth-of-type()
+
+        Another powerful pseudo-class is the `:nth-of-type()` selector. 
+
+        The `:nth-of-type()` selector targets elements based on their order in the HTML markup. Let's take a look inside our project's section tag:
+
+        ```
+        <input type="radio" id="target1"/><label for="target1"></label>
+        <input type="radio" id="target2"/><label for="target2"></label>
+        <input type="radio" id="target3"/><label for="target3"></label>
+        <input type="radio" id="target4"/><label for="target4"></label>
+        <input type="radio" id="target5"/><label for="target5"></label>
+        ```
+
+        The project starts off with 5 targets. By using the `:nth-of-type()` selectors in CSS we can now select each label individually:
+
+        ```
+        label:first-of-type {
+          ...
+        }
+
+        label:nth-of-type(2) {
+          ...
+        }
+
+        label:nth-of-type(3) {
+          ...
+        }
+
+        label:nth-of-type(4) {
+          ...
+        }
+
+        label:nth-of-type(5) {
+          ...
+        }
+        ```
+
+        Read more about Pseudo Selectors on [CSS Tricks](https://css-tricks.com/pseudo-class-selectors/)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS Transforms
+
+        The CSS `transform` property allows you to visually manipulate an element by skewing, rotating, translating, or scaling both in the plane and in the 3D space.
+
+        Today, we will be using the `rotateX` transform value to make it look like the targets have been hit and are falling backwards.
+
+        <img src="framework/img/css-transforms.gif" alt="CSS Transforms">
+
+        See the code for the above transforms [on codepen](http://codepen.io/team/css-tricks/pen/ebb6b5a5cec86aa04168f03e26c7501c?editors=1100)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS Transforms
+
+        Can you find where the CSS Transform is being applied in the `styles.css` file?
+
+        ```
+        input:checked + label {
+          transform: rotateX(70deg); 
+        }
+        ```
+        <p class="delayed">Whoa now - what does that `+` mean?</p>
+        <p class="delayed">The above CSS rule reads as: "the label directly following the checked input tag" and then applies the CSS transform to that label.</p>
+
+        <p class="delayed">Read more about CSS Transforms on [CSS Tricks](https://css-tricks.com/almanac/properties/t/transform/)</p>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS Animations
+
+        The last piece of the puzzle for our action game is getting the targets to move across the screen from right to left. This is achieved using CSS **keyframes**.
+
+        Scroll all the way to the bottom of the `styles.css` file. That's where our keyframes live:
+
+        ```
+        /* CSS ANIMATION KEYFRAME TO MOVE TARGETS
+        - - - - - - - - - - - - - - - - - - - - - */
+        @keyframes move {
+          to {
+              transform: translateX(-100%);
+          }
+        }
+        ```
+
+        In the above chunk of code, we are naming our keyframe `move`, and we want the life of the animation to move `to` a transformed value of `translateX(-100%)`.
+
+        <p class="delayed">Clear as mud, right?</p>
+
+        <p class="delayed">What this means: we eventually want the animation to move off the screen, to the left, at a negative value of 100%.</p>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS Animations
+
+        Great - so we've established our animation keyframes and named it `move`. How do we apply it to elements in our CSS?
+
+        Enter: the CSS `animation` property. Let's take a look in our `styles.css` file again, where we style the `section`...
+
+        ```
+        section {
+          animation-name: move;
+          animation-duration: 30s;
+          animation-delay: 1s;
+          animation-direction: forwards;
+          animation-timing-function: linear;
+        }
+        ```
+
+        There are a couple things going on here:
+        <ul>
+          <li class="delayed">We've assigned our keyframe `move` to the section using `animation-name`</li>
+          <li class="delayed">We set the duration of our animation to 30 seconds (try changing this value)</li>
+          <li class="delayed">We want the animation to start after the page has loaded and waited for 1 second</li>
+          <li class="delayed">We want the direction of our animation to move forwards</li>
+          <li class="delayed">And we want the overall speed of our animation to be the same throughout (linear)</li>
+        </ul>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Customize The Game
+
+        Now that we've learned a bit more about how the Action Game is built, try modifying it so it's your very own unique game!
+
+        * How would you **change the speed** of the targets?
+        * What if you wanted **square targets** instead of circles?
+        * Change up the **colours** and **sizes** of the targets, **add photo backgrounds** of your friends!
+        * Why stick to only 5 targets? **Add more** by copying the input/labels, changing the `id` and `for` attributes accordingly, and then modifying in CSS using the `nth-of-type` pseudo class!
+
+      </script>
+    </section>
+
+
+    <section id="next-steps" class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Next steps
+      </script>
+    </section>
+
+
+    <section class="slide small-type" data-markdown>
+      <script type="text/template">
+      #Getting your story, quiz or game online
+
+      Sign up for a free account at [thimble.mozilla.org](http://thimble.mozilla.org)
+
+      1. Click on **Create an account** in the top right corner
+      1. Once signed in, click on **Start a project from scratch**
+      1. You will then see an in-browser text editor and live preview. It looks sort of similar to atom!
+      1. Copy and paste your code into the `index.html` and `style.css` files provided. Override the content in there.
+      1. To create a new html file, click on the `+` next to "FILES" in the top left corner
+      1. Once complete, click **Publish** and you will get a sharable link to your project that you can share on social media or with friends and family!
+
+      If you're sharing your projects on twitter today, be sure to use hashtag **#llcCodeDay**! We would love to see your creations!!!  
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Next steps
+
+        Here are a couple of ideas for furthering your project:
+
+        1. Use icon fonts instead of images for the social icons
+          * Try [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icon fonts
+        1. Add metadata - [info here](https://support.google.com/webmasters/answer/79812?hl=en)
+        1. [Add a favicon](http://blog.teamtreehouse.com/how-to-make-a-favicon)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Resources
+
+        1. Online tutorials:
+          * http://learn.shayhowe.com/html-css/
+          * https://www.codeschool.com/courses/front-end-foundations
+        1. http://www.htmlandcssbook.com
+        1. Try a few more Ladies Learning Code workshops. Check our roadmap for suggestions at [http://ladieslearningcode.com/roadmap](http://ladieslearningcode.com/roadmap)
+      </script>
+    </section>
+
+    <!-- Last slide -->
+    <section class="slide last">
+      <h1>Thank you!</h1>
+      <h2 class="heading-bg"> </h2>
+      Together we're changing the world, one game at a time.
+      <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
+      <h2><span class="cursive">with</span> Instructor Name</h2>
+      <ul>
+        <li><a href="mailto:">hello@email.com</a></li>
+        <li><a href="#">mywebsite.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <p class="attribution">Slide presentation originally created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- cls main section -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Grabs all the .snippet elements
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
