@@ -1669,6 +1669,16 @@ margin: 0px;</textarea>
         <p class="delayed">Whoa now - what does that `+` mean?</p>
         <p class="delayed">The above CSS rule reads as: "the label directly following the checked input tag" and then applies the CSS transform to that label.</p>
 
+        <pre class="delayed"><code>&lt;input type="radio" id="target1"/&gt;
+        &lt;label for="target1"&gt;&lt;/label&gt; &lt;!-- This one is selected --&gt;
+        &lt;label for="target1"&gt;&lt;/label&gt; &lt;!-- Not this one! --&gt;
+        </code></pre>
+
+        <pre class="delayed"><code>&lt;input type="radio" id="target1"/&gt;
+        &lt;p&gt;Another element&lt;/p&gt;
+        &lt;label for="target1"&gt;&lt;/label&gt; &lt;!-- This one isn't selected either --&gt;
+        </code></pre>
+
         <p class="delayed">Read more about CSS Transforms on [CSS Tricks](https://css-tricks.com/almanac/properties/t/transform/)</p>
 
       </script>
