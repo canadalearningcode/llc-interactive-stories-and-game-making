@@ -1492,7 +1492,7 @@ margin: 0px;</textarea>
             <h1>The Learn To Code Day <strong>Carnival!</strong></h1>
           </header>
           
-          <section>
+          <form action ="#" autocomplete="off">
 
             <input type="radio" id="target1"/><label for="target1"></label>
             <input type="radio" id="target2"/><label for="target2"></label>
@@ -1500,15 +1500,15 @@ margin: 0px;</textarea>
             <input type="radio" id="target4"/><label for="target4"></label>
             <input type="radio" id="target5"/><label for="target5"></label>
 
-          </section>
+          </form>
 
           <footer>
           </footer>
         ```
 
-        <p>There are definitely some similarities here. We have a `header`, `section` and `footer`, but...</p>
+        <p>There are definitely some similarities here. We have a `header` and `footer`, but...</p>
         <ul>
-          <li class="delayed">The section contains HTML tags we haven't seen yet: `input` and `label`</li>
+          <li class="delayed">The section contains HTML tags we haven't seen yet: `input` and `label` inside a `form`</li>
           <li class="delayed">The footer is empty (on purpose)</li>
         </ul>
     
@@ -1707,10 +1707,10 @@ margin: 0px;</textarea>
 
         Great - so we've established our animation keyframes and named it `move`. How do we apply it to elements in our CSS?
 
-        Enter: the CSS `animation` property. Let's take a look in our `styles.css` file again, where we style the `section`...
+        Enter: the CSS `animation` property. Let's take a look in our `styles.css` file again, where we style the `form`...
 
         ```
-        section {
+        form {
           animation-name: move;
           animation-duration: 30s;
           animation-delay: 1s;
@@ -1721,7 +1721,7 @@ margin: 0px;</textarea>
 
         There are a couple things going on here:
         <ul>
-          <li class="delayed">We've assigned our keyframe `move` to the section using `animation-name`</li>
+          <li class="delayed">We've assigned our keyframe `move` to the form using `animation-name`</li>
           <li class="delayed">We set the duration of our animation to 30 seconds (try changing this value)</li>
           <li class="delayed">We want the animation to start after the page has loaded and waited for 1 second</li>
           <li class="delayed">We want the direction of our animation to move forwards</li>
