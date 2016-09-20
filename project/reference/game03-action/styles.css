@@ -31,7 +31,6 @@ form {
   animation-name: move;
   animation-duration: 30s;
   animation-delay: 1s;
-  animation-direction: forwards;
   animation-timing-function: linear;
 }
 
@@ -42,7 +41,7 @@ label {
 }
 
 input:checked + label {
-  transform: rotateX(70deg); 
+  transform: rotateX(70deg);
 }
 
 
@@ -52,7 +51,7 @@ change the size, shape, background, add more, etc
 label:first-of-type {
   width: 140px;
   padding-bottom: 140px;
-  background: url(http://placekitten.com/200/200); 
+  background: url(http://placekitten.com/200/200);
   background-size: cover;
   left: 0;
 }
