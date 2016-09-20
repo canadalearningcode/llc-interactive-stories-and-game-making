@@ -1,3 +1,4 @@
+google fonts
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,7 +88,7 @@
       <script type="text/template">
         # Agenda
 
-        <div class="table-of-contents"></div> 
+        <div class="table-of-contents"></div>
 
         <!-- Intro + Example Projects + Guest Speaker (10am)
 
@@ -113,7 +114,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         # Impact of Digital Gaming
-        
+
         This year, we are building upon our mission to teach 21st century skills through one of the most popular digital mediums: gaming.
 
         <ul>
@@ -125,7 +126,7 @@
 
       </script>
     </section>
-    
+
 
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
@@ -141,13 +142,13 @@
 
         <ol class="examples">
           <li>[Quiz](project/reference/game01-quiz/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span> </li>
-          
+
           <li>[Choose Your Own Adventure](project/reference/game02-textadventure/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></li>
-          
+
           <li>[Action Game](project/reference/game03-action/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><br>(Try this one after you've made either a quiz or story)</span></li>
         </ol>
 
-        ##Notice anything about the structure of these examples? 
+        ##Notice anything about the structure of these examples?
         <p class="delayed">They are a combo of single **one-page sites** linked together to form a larger narrative.</p><!-- .element: class="delayed" -->
 
       </script>
@@ -430,7 +431,7 @@
           |-- images
           |-- reference
         ```
-        
+
         The **project** folder is where each part of your story will live.
 
         The **images** folder contains a selection of images to use in your project (or add your own to this folder during the exercises).
@@ -1082,11 +1083,18 @@ selector { /* select the heading */
 
         1. Go to [Google Fonts](http://www.google.com/fonts).
         1. **Add to Collection** to select a font.
-        ![](framework/img/workshop/google-fonts-1.jpg)
-        1. Select **Use** to get the code. <span class="note">(You can change your selections in the next exercise.)</span>
-        1. Select font weights. <span class="note">The more you choose, the more it will slow down page load time.</span>
+        ![](framework/img/workshop/add-google-font.png)
+        1. Open up the <em>Families Selected</em> drawer at the bottom of the page.
+![](framework/img/workshop/open-up-chosen-fonts.png)
+        <span class="note">(You can change your selections in the next exercise.)</span>
+        1. Select font weights in the "Customize" Tab.
+![](framework/img/workshop/choose-weights.png)
+        <p>The more you choose, the more it will slow down page load time.</p>
+![](framework/img/workshop/load-slow.png)
           * The default character set should contain what you need.
-        1. Copy the `<link>` code snippet and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
+        1. Copy the `<link>` code snippet
+![](framework/img/workshop/copy-google-font-script.png)
+         and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
           ```
           <head>
             <meta charset="UTF-8">
@@ -1133,7 +1141,7 @@ selector { /* select the heading */
       <script type="text/template">
         #Class Exercise #5: Typography
 
-        (Make sure the Google Font stylesheet has been added to your HTML page to use the fonts.)<!-- .element: class="note" -->
+          (Make sure the Google Font stylesheet has been added to your HTML page to use the fonts. OR if you haven't chosen any Google Fonts, take a look at [http://css.cool](http://css.cool) and choose a font from the font-families section)<!-- .element: class="note" -->
 
         Let&#39;s add the base font to the `body` element, so all the descendant elements can inherit this style.
 
@@ -1184,7 +1192,7 @@ selector { /* select the heading */
         height: ;</textarea>
         <div id="block">I'm a block element.</div>
       </script>
-    </section> 
+    </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -1201,9 +1209,9 @@ selector { /* select the heading */
         margin: ;
         width: ;
         height: ;</textarea>
-        <span id="inline">I'm an inline element.</span> 
+        <span id="inline">I'm an inline element.</span>
       </script>
-    </section> 
+    </section>
 
     <section id="margin-padding" class="slide" data-markdown>
       <script type="text/template">
@@ -1275,11 +1283,11 @@ margin: 0px;</textarea>
     <section class="slide" data-markdown>
       <script type="text/template">
         #Being more specific - Using a Class
-        
-        Remember when we saw the `lang` and `charset` attributes? Well there's a really handy one we can use - the `class` attribute.  
-        
+
+        Remember when we saw the `lang` and `charset` attributes? Well there's a really handy one we can use - the `class` attribute.
+
         The value of the `class` is defined by you!  And it can be added to any tag to attach extra identifying information.
-        
+
         ```xml
         <img class="profile-img" src="images/profile.jpg" alt="Your Name">
         ```
@@ -1291,7 +1299,7 @@ margin: 0px;</textarea>
           /* any element with the class of 'profile-img' */
         }
         ```
-        
+
         Note that to use the `class` as a selector, it must start with a period, followed by class name with no spaces.
       </script>
     </section>
@@ -1477,8 +1485,8 @@ margin: 0px;</textarea>
 
         Looking through a completed project and modifying it until it's your own is a great way to learn advanced topics.
 
-        This project also contains two stylesheets - only modify the `styles-advanced.css` file if you are feeling very confident or have the help of a mentor. 
-        
+        This project also contains two stylesheets - only modify the `styles-advanced.css` file if you are feeling very confident or have the help of a mentor.
+
       </script>
     </section>
 
@@ -1491,7 +1499,7 @@ margin: 0px;</textarea>
           <header>
             <h1>The Learn To Code Day <strong>Carnival!</strong></h1>
           </header>
-          
+
           <section>
 
             <input type="radio" id="target1"/><label for="target1"></label>
@@ -1511,7 +1519,7 @@ margin: 0px;</textarea>
           <li class="delayed">The section contains HTML tags we haven't seen yet: `input` and `label`</li>
           <li class="delayed">The footer is empty (on purpose)</li>
         </ul>
-    
+
       </script>
     </section>
 
@@ -1575,7 +1583,7 @@ margin: 0px;</textarea>
 
         A **radio button** is used in forms for making multiple choice selections where the user can only choose one answer.
 
-        This is the opposite to **checkboxes** where you can choose multiple answers. 
+        This is the opposite to **checkboxes** where you can choose multiple answers.
 
         <img src="framework/img/input-types.png" alt="Radio vs Checkbox">
 
@@ -1599,7 +1607,7 @@ margin: 0px;</textarea>
       <script type="text/template">
         #PSEUDO CLASS :nth-of-type()
 
-        Another powerful pseudo-class is the `:nth-of-type()` selector. 
+        Another powerful pseudo-class is the `:nth-of-type()` selector.
 
         The `:nth-of-type()` selector targets elements based on their order in the HTML markup. Let's take a look inside our project's section tag:
 
@@ -1663,7 +1671,7 @@ margin: 0px;</textarea>
 
         ```
         input:checked + label {
-          transform: rotateX(70deg); 
+          transform: rotateX(70deg);
         }
         ```
         <p class="delayed">Whoa now - what does that `+` mean?</p>
@@ -1776,7 +1784,7 @@ margin: 0px;</textarea>
       1. To create an *images* folder, right click in the left sidebar and click `New Folder` and name it "images". Upload your images there once the folder has been created.
       1. Once complete, click `Publish` and you will get a sharable link to your project that you can share on social media or with friends and family!
 
-      If you're sharing your projects on twitter today, be sure to use hashtag **#llcCodeDay**! We would love to see your creations!!!  
+      If you're sharing your projects on twitter today, be sure to use hashtag **#llcCodeDay**! We would love to see your creations!!!
 
       </script>
     </section>
