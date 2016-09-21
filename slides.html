@@ -218,8 +218,7 @@
       <script type="text/template">
         #Developer Tools
 
-        **Chrome Developer Tools** take it a step further and allow you to *inspect* any web page, making it easier to test & debug code. The tools can be accessed in a couple ways:
-
+        **Chrome Developer tools** take it a step further and allow you to *inspect* any web page, making it easier to test & debug code. The tools can be accessed in a couple of ways:
         * Option 1: right-click / two-finger tap on a web page and select **Inspect Element**
         * Option 2: **Ctrl + Shift + I** (PC) / **Cmnd + Option + I** (Mac)
 
@@ -258,7 +257,7 @@
 
         ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
 
-        The **Settings** tab will show by default. Scroll down to **Soft Wrap** option.
+        The **Settings** tab will show by default. Scroll down to the **Soft Wrap** option.
 
         ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
 
@@ -337,7 +336,7 @@
 
         Nested tags create a family tree-like relationship, often referred to as *parent* and *child* nodes.
 
-        The inner tag is the child of the outer tag.
+        The inner element is the child of the outer element.
 
         ```
         <parent>
@@ -357,7 +356,7 @@
         <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title></title></head><body></body></html>
         ```
 
-        But for us, using whitespace through indentation (tabs) will make HTML easier to read. When nesting a tag, add one tab space.
+        But for us, using whitespace through indentation (tabs) makes HTML easier to read. When nesting a tag, add one tab space.
 
         ```
         <outertag>
@@ -491,7 +490,7 @@
 
         * always the first HTML tag & identifies the document as HTML
         * it is the root element & ancestor of all other elements because everything is *nested* inside
-        * the `lang` *attribute* classifies the language (more on attributes soon)
+        * the `lang` *attribute* identifies the language (more on attributes soon)
 
         <pre><code>&lt;!DOCTYPE html&gt;
         <strong>&lt;html lang=&quot;en&quot;&gt;</strong>
@@ -558,10 +557,10 @@
       <script type="text/template">
         # Attributes
 
-        * provides additional information or instruction for the element
+        * provide additional information or instruction for the element
         * included *inside the opening HTML tag*
-        * follows the syntax of `attribute="value"` (note the quotes)
-        * many different attributes
+        * follow the syntax `attribute="value"` (note the quotes)
+        * There are many different attributes for each HTML element
 
         ```
         <tag attribute="value">content</tag>
@@ -602,7 +601,7 @@
 
         HTML5 introduced new tags to better describe blocks of content such as `<header>`, `<section>` and `<footer>`. (There are many more.)
 
-        The `div` tag can still be used when needed for purely grouping elements together for styling or when no other HTML5 tag properly describes the element.
+        The `div` tag can still be used when simply grouping elements together for styling, or when no other HTML5 tag properly describes the grouped elements.
 
         ----
         ###Resources
@@ -616,12 +615,12 @@
       <script type="text/template">
         #Class Exercise #2: Page structure (5 minutes)
 
-        Back in the text editor, let's add the HTML5 structural tags to setup the page layout.
+        Back in the text editor, let's add the HTML5 structural tags to set up the page layout.
         Only add the structural HTML blocks in this step, no content just yet.
 
-        We will need these tags: `<header>`, one `<section>` and a `<footer>`
+        We will need these tags: one `<header>`, one `<section>` and a `<footer>`
 
-        Also, you can use HTML comments to help organize the code like so:
+        You can also use HTML comments to help organize the code like so:
 
         ```
         <!-- page header -->
@@ -687,7 +686,7 @@
       <script type="text/template">
         #Headings & HTML5 Sectioning tags
 
-        With the introduction of HTML5 sectioning tags, each part of the document that uses a sectioning tag now gets its *own* outline.
+        With the introduction of HTML5 sectioning tags, each section of the document now gets its *own* outline.
 
         **HTML5 Heading Outline**
         ```xml
@@ -735,7 +734,7 @@
       <script type="text/template">
         #Self-closing tags and images
 
-        Self-closing tags don't format content or require a closing tag. They are used to embed objects onto the page; they *are* the content.
+        Self-closing tags don't format content or require a closing tag. They are used to embed objects in the page; they *are* the content.
 
         Images use a self-closing tag. It also requires a `src` *attribute* to tell the browser the location of the image file.
 
@@ -778,7 +777,7 @@
       <script type="text/template">
         #Image file paths
 
-        It's best practice (but not required) to put image files into its own folder to keep the project files organized.  Today's **project** directory already includes an **images** folder.
+        It's best practice (but not required) to put image files into their own folder to keep the project files organized.  Today's **project** directory already includes an **images** folder.
 
         Since the images are not in the same folder as **start.html**, use a *relative* path to link to the file.
 
@@ -863,7 +862,7 @@
       <script type="text/template">
         #CSS Syntax & Terminology
 
-        **Selectors:** determines which HTML element(s) to apply the styles to.
+        **Selectors:** determine which HTML element(s) to apply the styles to.
         **Declarations:** style rules written in `property:value` pairs, are wrapped by curly brackets `{ }` and must end with a semi-colon `;`
 
         ```
@@ -928,7 +927,7 @@ selector { /* select the heading */
 
         The style sheet is then referenced within the `<head>` of the HTML document (different tag from `<header>`).
 
-        Use `<link>` tag and two *attributes*, `rel` and `href`.
+        Use a `<link>` tag and two *attributes*, `rel` and `href`.
 
         ```
         <head>
@@ -1033,7 +1032,7 @@ selector { /* select the heading */
       <script type="text/template">
         #CSS Font Styles
 
-        The are quite a few CSS properties for styling text.  Here's a few to discuss today. Change some values below to see what happens!
+        The are quite a few CSS properties for styling text.  Here are a few to discuss today. Change some values below to see what happens!
 
         <textarea class="snippet" data-subject="#css-type">color: slateblue;
         font-family: Helvetica, Arial, serif;
@@ -1119,7 +1118,7 @@ selector { /* select the heading */
       <script type="text/template">
         #Inheritance and Specificity
 
-        A strength of CSS is styles can be inherited from parent to child elements. Let's review the family tree structure between the elements.
+        A strength of CSS is that styles can be inherited from parent to child elements. Let's review the family tree structure between the elements.
 
         ```
         <body><!-- parent of h1 and p -->
@@ -1436,7 +1435,7 @@ margin: 0px;</textarea>
         <ul>
           <li class="delayed">What **other pages** do you need to create in your narrative?</li>
           <li class="delayed">What **hyperlinks** will you use to allow users to navigate your project?</li>
-          <li class="delayed">What is the over all **"look and feel"** of your project?</li>
+          <li class="delayed">What is the overall **"look and feel"** of your project?</li>
         </ul>
 
         <p class="delayed">Trying to do something in CSS but not sure how? <br><br>Be sure to check the [Mozilla Developer Network List of CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) for more info, or flag down one of our mentors!</p>
@@ -1532,7 +1531,7 @@ margin: 0px;</textarea>
 
         You typically cannot do click interactions with just HTML and CSS - this is usually handled with JavaScript or jQuery (a JavaScript library). One way developers get around this is to "hack" existing HTML tags that are used in [online forms](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form).
 
-        The key thing to note for today's project is the `id` attribute on the `input` tag...
+        The key thing to note for today's project is that the `id` attribute on the `input` tag...
 
         ```
         <input type="radio" id="target1"/>
@@ -1726,7 +1725,7 @@ margin: 0px;</textarea>
       <script type="text/template">
         #CSS Animations
 
-        Great - so we've established our animation keyframes and named it `move`. How do we apply it to elements in our CSS?
+        Great - so we've established our animation's keyframes and named them `move`. How do we apply the animation to elements in our CSS?
 
         Enter: the CSS `animation` property. Let's take a look in our `styles.css` file again, where we style the `section`...
 
@@ -1742,10 +1741,10 @@ margin: 0px;</textarea>
 
         There are a couple things going on here:
         <ul>
-          <li class="delayed">We've assigned our keyframe `move` to the section using `animation-name`</li>
+          <li class="delayed">We assigned our `move` animation to the section using `animation-name`</li>
           <li class="delayed">We set the duration of our animation to 30 seconds (try changing this value)</li>
           <li class="delayed">We want the animation to start after the page has loaded and waited for 1 second</li>
-          <li class="delayed">We want the direction of our animation to move forwards</li>
+          <li class="delayed">We want the direction of our animation to move forward</li>
           <li class="delayed">And we want the overall speed of our animation to be the same throughout (linear)</li>
         </ul>
 
