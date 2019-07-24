@@ -1071,7 +1071,7 @@ selector { /* select the heading */
         The are quite a few CSS properties for styling text.  Here are a few to discuss today. Change some values below to see what happens!
 
         <textarea class="snippet" data-subject="#css-type">color: slateblue;
-        font-family: Helvetica, Arial, serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-weight: normal;
         font-size: 16px;
         line-height: 1.25;
@@ -1097,7 +1097,7 @@ selector { /* select the heading */
         Web safe refers to pre-installed fonts.  Operating systems do not have the same defaults, so use a font *stack* to provide fallback options.
 
         ```
-        font-family: Helvetica, Arial, serif;
+        font-family: Helvetica, Arial, sans-serif;
         ```
 
         * Some common "web safe" fonts are:
@@ -1238,7 +1238,7 @@ selector { /* select the heading */
 
         ##Inline Elements
         *   will be width of its content
-        *   always appears “in a line” with other inline level elements
+        *   always appears “in a line” with other inline elements
         *   does not render CSS height and width at all
         *   will apply margin and padding but with unexpected results
 
@@ -1501,11 +1501,11 @@ margin: 0px;</textarea>
 
         If you get stuck, flag down a mentor for help or work with a partner.
 
-        Building this game will involve some more advanced CSS concepts:
+        Building this game will involve some more advanced concepts:
 
         <ul>
           <li class="delayed">Use of HTML `input` and `label` to create clickable areas</li>
-          <li class="delayed">More pseudo classes</li>
+          <li class="delayed">More CSS pseudo classes</li>
           <li class="delayed">CSS Transforms</li>
           <li class="delayed">CSS Animations using Keyframes</li>
         </ul>
@@ -1565,7 +1565,7 @@ margin: 0px;</textarea>
       <script type="text/template">
         #INPUTS AND LABELS
 
-        You typically cannot do click interactions with just HTML and CSS - this is usually handled with JavaScript or jQuery (a JavaScript library). One way developers get around this is to "hack" existing HTML tags that are used in [online forms](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form).
+        Typically, click interactions aren't done with HTML and CSS - this is usually handled with JavaScript. One way to get around this is to "hack" existing HTML tags that are used in [online forms](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form). In this case, "hack" just means a work-around.
 
         The key thing to note for today's project is that the `id` attribute on the `input` tag...
 
@@ -1604,9 +1604,13 @@ margin: 0px;</textarea>
         }
         ```
 
-        * The default `background` of all our targets is purple
-        * Our targets are circular - have a `border-radius` of 50%
-        * We've used a new css property called `box-shadow` to trick CSS into giving us a double border on our targets. Change the pixel values and hex codes and see what happens!
+        * The `background` of all our targets is purple
+        * Make the targets circular with a `border-radius` of 50%
+        * Use `box-shadow` to create a double border on our targets. Change the pixel values and hex codes and see what happens!
+
+        ---
+        ###Resources
+        * [box-shadow generator](https://www.cssmatic.com/box-shadow)
 
       </script>
     </section>
@@ -1801,6 +1805,29 @@ margin: 0px;</textarea>
       </script>
     </section>
 
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Today...
+
+        We learned a whole pile of things:
+
+        * Coding environment (text editors and browsers)
+        * Intro to HTML5
+        * CSS Typography and Colours
+        * Spacing and page layout
+        * Advanced CSS selectors
+        * CSS Animations
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # You did it!
+
+        ![Woman crossing the finish line](framework/img/workshop/finish.gif)<!-- .element: width="40%" -->
+      </script>
+    </section>
+
 
     <section id="next-steps" class="slide title" data-markdown data-toc>
       <script type="text/template">
@@ -1812,9 +1839,11 @@ margin: 0px;</textarea>
       <script type="text/template">
       #Getting your story, quiz or game online
 
+      [Glitch](https://glitch.com) is an online community where people can collaborate on and share their code.
+
       ##1) Create a Glitch Account
 
-      Go to https://glitch.com and sign in with email. You will need to go to your inbox and click on the "sign in" button to begin.
+      Go to [glitch.com](https://glitch.com) and sign in with email. You will need to go to your inbox and click on the "sign in" button to begin.
 
       ![Sign in with email](framework/img/workshop/glitch-signin-with-email.png)
       ![Verification email](framework/img/workshop/glitch-verification.png)
