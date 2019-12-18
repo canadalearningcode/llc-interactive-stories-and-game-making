@@ -1,10 +1,3 @@
-## This content is featured in a monthly theme!
-
-In 2019, we want to challenge Canadians to pause and think, learn about, share, and work towards solving issues that affect us all on a global scale – while leveraging the power of technology!  More information on monthly themes [here](https://www.canadalearningcode.ca/monthly-themes/)
-
-*June's theme is CLIMATE.*
-
-See slide 6 for suggestions on how learners can incorporate this month’s theme into their projects.
 
 # Ladies Learning Code
 # Interactive Stories and Gamemaking with HTML &amp; CSS
