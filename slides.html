@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/a11y/plugin.css">
   <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
   <link rel="shortcut icon" href="framework/img/favicon.ico">
 
@@ -328,7 +329,7 @@
       <script type="text/template">
         #HTML & CSS
 
-        This is how the Ladies Learning Code site looks like with & without CSS!
+        This is how the Canada Learning Code site looks like with & without CSS!
 
         ![Screenshot of Canada Learning Code homepage with unstyled text and HTML structure.](framework/img/workshop/llc-no-css.jpg)
         ![Screenshot of Canada Learning Code homepage with fully styled text and HTML structure.](framework/img/workshop/llc-css.jpg)
@@ -351,12 +352,12 @@
 
         Tags usually come in pairs &mdash; an opening tag and a closing tag &mdash; to *wrap* the content.  Note the closing tag has a forward slash (`/`).
 
-        ```
+        ```html
         <tag> opening tag --- closing tag </tag>
         ```
 
         HTML *tags* describe the content inside of them to the web browser.
-        ```
+        ```html
         <h1>This tag describes a heading</h1>
         <p>This tag is for paragraphs.</p>
         ```
@@ -369,7 +370,7 @@
 
         Tags can be *nested* within other tags like this:
 
-        ```
+        ```html
         <outertag>outer content <innertag>inner content</innertag> outer content</outertag>
         ```
 
@@ -377,7 +378,7 @@
 
         The inner element is the child of the outer element.
 
-        ```
+        ```html
         <parent>
           <child></child>
         </parent>
@@ -391,13 +392,13 @@
 
         HTML was created for web browsers to read (not humans) so this makes perfect sense to a web browser:
 
-        ```
+        ```html
         <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title></title></head><body></body></html>
         ```
 
         But for us, using whitespace through indentation (tabs) makes HTML easier to read. When nesting a tag, add one tab space.
 
-        ```
+        ```html
         <outertag>
           <innertag>
           </innertag>
@@ -412,7 +413,7 @@
 
         The tags below should be included in ** *all* ** HTML documents.
 
-        ```
+        ```html
         <!DOCTYPE html>
         <html lang="en">
           <head>
@@ -436,7 +437,7 @@
 
       Inside of the folder you downloaded today, open the `project` folder in your text editor to edit your project.
 
-      ```html
+      ```xml
       llc-interactive-stories-and-game-making
         |-- framework // Contains files needed for slide presentation. Do not edit!
         |-- project // Contains the exercise files for this workshop. (images, CSS & HTML)
@@ -463,7 +464,7 @@
 
         Your project folder structure will look like this:
 
-        ```html
+        ```xml
         project
           |-- images
           |-- reference
@@ -484,7 +485,7 @@
         1. Save it as `start.html` (**File** > **Save**)
         1. Add all of the basic HTML tags. Refer to [this slide](slides.html#basic-tags) for reference.
         1. In *between* the `<title></title>` tags, add a *page title* that reflects the content of your webpage. Example:
-          ```
+          ```html
           <title>Choose Your Own Adventure</title>
           ```
         1. Open `start.html` in the browser.
@@ -600,7 +601,7 @@
         * follow the syntax `attribute="value"` (note the quotes)
         * There are many different attributes for each HTML element
 
-        ```
+        ```html
         <tag attribute="value">content</tag>
         ```
       </script>
@@ -614,12 +615,12 @@
 
         The `lang` attribute is used to classify the language.
 
-        ```
+        ```html
         <html lang="en">
         ```
 
         The `charset` attribute sets the character encoding.
-        ```
+        ```html
         <meta charset="UTF-8">
         ```
 
@@ -660,7 +661,7 @@
 
         You can also use HTML comments to help organize the code like so:
 
-        ```
+        ```html
         <!-- page header -->
         <header>
 
@@ -682,7 +683,7 @@
 
         **Paragraphs**: whether it&#39;s one sentence or more, each paragraph needs its own pair of `<p></p>` tags.
 
-        ```xml
+        ```html
         <p>This is a paragraph.</p>
 
         <p>This is a longer paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero dolor expedita quasi reiciendis minus unde sapiente id eveniet saepe officia quibusdam aspernatur, sint voluptate ipsam ex magni. Aliquam, ex!</p>
@@ -727,7 +728,7 @@
         With the introduction of HTML5 sectioning tags, each section of the document now gets its *own* outline.
 
         **HTML5 Heading Outline**
-        ```xml
+        ```html
         <h1>Essay Title</h1>
 
         <section>
@@ -776,14 +777,14 @@
 
         Images use a self-closing tag. It also requires a `src` *attribute* to tell the browser the location of the image file.
 
-        ```
+        ```html
         <img src="path/to/image/file-name">
 
         ```
 
         `alt` is another attribute that is added to images to provide *alternative text* to visually impaired web visitors using screen readers.
 
-        ```
+        ```html
         <img src="http://placekitten.com/200/300" alt="kitten!">
 
         ```
@@ -844,12 +845,12 @@
 
         Use the anchor tag, `<a>` to create the link. It also needs an `href` attribute to provide information for the location of the resource.
 
-        ```xml
+        ```html
         <a href="http://ladieslearningcode.com">Ladies Learning Code</a>
         ```
 
         Here's the syntax for an email link.
-        ```xml
+        ```html
         <a href="mailto:hello@myemail.com">hello@myemail.com</a>
         ```
       </script>
@@ -905,7 +906,7 @@
             color: red;
           }
           ```
-
+          
         >In the above example, what is the selector? Property? Value?
       </script>
     </section>
@@ -916,7 +917,7 @@
 
         Multiple declarations can be added to one selector. Just be sure to end each declaration with a semi-colon and write them on a separate line for readability.
 
-        ```
+        ```css
         h2 {
           background-color: green;
           font-size: 50px;
@@ -958,7 +959,7 @@ selector { /* select the heading */
 
         Use a `<link>` tag and two *attributes*, `rel` and `href`.
 
-        ```
+        ```html
         <head>
           <title>Page Title</title>
           <link rel="stylesheet" href="css/style.css">
@@ -986,7 +987,7 @@ selector { /* select the heading */
           </head>
           ```
         1. Run a test by adding a background color to the viewport (`body`).
-          ```
+          ```css
           body {
             background: lightblue;
           }
@@ -1020,7 +1021,7 @@ selector { /* select the heading */
         * **RGB** - uses 3 numerical values between `0` (black) and `255` (white)
         * **hex code** - number sign (`#`) followed by six characters (0-9, A-F)
 
-        ```
+        ```css
         /* These are all the same colour - this is also a CSS comment by the way! */
         p {
           background: firebrick;
@@ -1064,7 +1065,7 @@ selector { /* select the heading */
         The are quite a few CSS properties for styling text.  Here are a few to discuss today. Change some values below to see what happens!
 
         <textarea class="snippet" data-subject="#css-type">color: slateblue;
-        font-family: Helvetica, Arial, serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-weight: normal;
         font-size: 16px;
         line-height: 1.25;
@@ -1090,7 +1091,7 @@ selector { /* select the heading */
 
         Web safe refers to pre-installed fonts.  Operating systems do not have the same defaults, so use a font *stack* to provide fallback options.
 
-        ```
+        ```css
         font-family: Helvetica, Arial, serif;
         ```
 
@@ -1123,7 +1124,7 @@ selector { /* select the heading */
         1. Copy the `<link>` code snippet
 ![](framework/img/workshop/copy-google-font-script.png)
          and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
-          ```
+          ```html
           <head>
             <meta charset="UTF-8">
             <title>Create Your Own Adventure</title>
@@ -1135,7 +1136,7 @@ selector { /* select the heading */
 
         Now you're ready to use the new fonts. Use the font-family name listed in the Google Fonts page.
 
-        ```
+        ```css
         font-family: 'Open Sans', sans-serif;
         ```
 
@@ -1151,7 +1152,7 @@ selector { /* select the heading */
 
         A strength of CSS is that styles can be inherited from parent to child elements. Let's review the family tree structure between the elements.
 
-        ```
+        ```html
         <body><!-- parent of h1 and p -->
           <h1>My Website</h1><!-- child of body, sibling of p -->
           <p>This is a paragraph.</p><!-- child of body, sibling of h1 -->
@@ -1159,7 +1160,7 @@ selector { /* select the heading */
         ```
 
         CSS properties in the `body` selector are inherited by the descendant elements. A more specific selector will override the inherited values.
-        ```
+        ```css
         body {
           color: #222222;
         }
@@ -1180,7 +1181,7 @@ selector { /* select the heading */
 
         Change the `font-weight` to a thinner or thicker font (optional).
 
-        ```
+        ```css
         body {
           font-family: 'Open Sans', sans-serif;
           font-weight: 300;
@@ -1197,7 +1198,7 @@ selector { /* select the heading */
 
         To target multiple selectors at the same time, you can *combine* selectors with a comma.
 
-        ```
+        ```css
         h1,
         h2 {
           font-family: 'Passion One', cursive;
@@ -1233,7 +1234,7 @@ selector { /* select the heading */
 
         ##Inline Elements
         *   will be width of its content
-        *   always appears “in a line” with other inline level elements
+        *   always appears “in a line” with other inline elements
         *   does not render CSS height and width at all
         *   will apply margin and padding but with unexpected results
 
@@ -1321,7 +1322,7 @@ margin: 0px;</textarea>
 
         The value of the `class` is defined by you!  And it can be added to any tag to attach extra identifying information.
 
-        ```xml
+        ```html
         <img class="profile-img" src="images/profile.jpg" alt="Your Name">
         ```
         ```css
@@ -1384,14 +1385,14 @@ margin: 0px;</textarea>
 
         Let's add some specific styles to the header, to set it apart from the rest of the page.  We can't use `h1` or `h2` by itself since it will select all of them on the page so use *descendant selectors* instead.
 
-        ```xml
+        ```html
         <header>
           <h1>A Ladies Learning Code Mystery</h1>
           <h2>Where Are All the Women in Tech?</h2>
         </header>
         ```
 
-        ```
+        ```css
         header h1 {
           color: #B109AA;
           font-size: 60px;
@@ -1496,11 +1497,11 @@ margin: 0px;</textarea>
 
         If you get stuck, flag down a mentor for help or work with a partner.
 
-        Building this game will involve some more advanced CSS concepts:
+        Building this game will involve some more advanced concepts:
 
         <ul>
           <li class="delayed">Use of HTML `input` and `label` to create clickable areas</li>
-          <li class="delayed">More pseudo classes</li>
+          <li class="delayed">More CSS pseudo classes</li>
           <li class="delayed">CSS Transforms</li>
           <li class="delayed">CSS Animations using Keyframes</li>
         </ul>
@@ -1528,7 +1529,7 @@ margin: 0px;</textarea>
         #Let's Take A Closer Look
 
         Open up the `start.html` file and look inside the **body** tags:
-        ```
+        ```html
           <header>
             <h1>The Learn To Code Day <strong>Carnival!</strong></h1>
           </header>
@@ -1560,17 +1561,17 @@ margin: 0px;</textarea>
       <script type="text/template">
         #INPUTS AND LABELS
 
-        You typically cannot do click interactions with just HTML and CSS - this is usually handled with JavaScript or jQuery (a JavaScript library). One way developers get around this is to "hack" existing HTML tags that are used in [online forms](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form).
+        Typically, click interactions aren't done with HTML and CSS - this is usually handled with JavaScript. One way to get around this is to "hack" existing HTML tags that are used in [online forms](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form). In this case, "hack" just means a work-around.
 
         The key thing to note for today's project is that the `id` attribute on the `input` tag...
 
-        ```
+        ```html
         <input type="radio" id="target1"/>
         ```
 
         ...corresponds to the `for` attribute on the `label` tag:
 
-        ```
+        ```html
         <label for="target1"></label>
         ```
 
@@ -1591,7 +1592,7 @@ margin: 0px;</textarea>
         In our project, the `label` is important, as it dictates the way our targets **look**.
 
         Let's take a look at the CSS for labels:
-        ```
+        ```css
         label {
           background: #B109AA;
           border-radius: 50%;
@@ -1599,9 +1600,13 @@ margin: 0px;</textarea>
         }
         ```
 
-        * The default `background` of all our targets is purple
-        * Our targets are circular - have a `border-radius` of 50%
-        * We've used a new css property called `box-shadow` to trick CSS into giving us a double border on our targets. Change the pixel values and hex codes and see what happens!
+        * The `background` of all our targets is purple
+        * Make the targets circular with a `border-radius` of 50%
+        * Use `box-shadow` to create a double border on our targets. Change the pixel values and hex codes and see what happens!
+
+        ---
+        ###Resources
+        * [box-shadow generator](https://www.cssmatic.com/box-shadow)
 
       </script>
     </section>
@@ -1644,7 +1649,7 @@ margin: 0px;</textarea>
 
         The `:nth-of-type()` selector targets elements based on their order in the HTML markup. Let's take a look inside our project's section tag:
 
-        ```
+        ```html
         <input type="radio" id="target1"/><label for="target1"></label>
         <input type="radio" id="target2"/><label for="target2"></label>
         <input type="radio" id="target3"/><label for="target3"></label>
@@ -1654,7 +1659,7 @@ margin: 0px;</textarea>
 
         The project starts off with 5 targets. By using the `:nth-of-type()` selectors in CSS we can now select each label individually:
 
-        ```
+        ```css
         label:first-of-type {
           ...
         }
@@ -1702,7 +1707,7 @@ margin: 0px;</textarea>
 
         Can you find where the CSS Transform is being applied in the `styles.css` file?
 
-        ```
+        ```css
         input:checked + label {
           transform: rotateX(70deg);
         }
@@ -1733,7 +1738,7 @@ margin: 0px;</textarea>
 
         Scroll all the way to the bottom of the `styles.css` file. That's where our keyframes live:
 
-        ```
+        ```css
         /* CSS ANIMATION KEYFRAME TO MOVE TARGETS
         - - - - - - - - - - - - - - - - - - - - - */
         @keyframes move {
@@ -1760,7 +1765,7 @@ margin: 0px;</textarea>
 
         Enter: the CSS `animation` property. Let's take a look in our `styles.css` file again, where we style the `form`...
 
-        ```
+        ```css
         form {
           animation-name: move;
           animation-duration: 30s;
@@ -1796,6 +1801,29 @@ margin: 0px;</textarea>
       </script>
     </section>
 
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Today...
+
+        We learned a whole pile of things:
+
+        * Coding environment (text editors and browsers)
+        * Intro to HTML5
+        * CSS Typography and Colours
+        * Spacing and page layout
+        * Advanced CSS selectors
+        * CSS Animations
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # You did it!
+
+        ![Woman crossing the finish line](framework/img/workshop/finish.gif)<!-- .element: width="40%" -->
+      </script>
+    </section>
+
 
     <section id="next-steps" class="slide title" data-markdown data-toc>
       <script type="text/template">
@@ -1806,6 +1834,8 @@ margin: 0px;</textarea>
     <section class="slide small-type" data-markdown>
       <script type="text/template">
       #Getting your story, quiz or game online
+
+      [Glitch](https://glitch.com) is an online community where people can collaborate on and share their code.
 
       ##1) Create a Glitch Account
 
@@ -1921,6 +1951,7 @@ margin: 0px;</textarea>
 
   <script src="framework/scripts/plugins/markdown/marked.js"></script>
   <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/a11y/plugin.js"></script>
   <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <script src="framework/scripts/llc.js"></script>

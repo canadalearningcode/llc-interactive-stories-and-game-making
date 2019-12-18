@@ -466,7 +466,7 @@ blockquote {
 }
 blockquote {
   background: #fff;
-  border: 3px solid rgba(177, 9, 170, 0.2)
+  border: 3px solid $llc-pink
 }
 
 /* Incremental slides */
@@ -731,6 +731,23 @@ code, kbd {
 }
 .php .hljs-preprocessor {
   color: green;
+}
+
+.hljs {
+    border: 1px solid $gray;
+}
+
+.hljs-comment {
+  color: #727272;
+}
+
+.hljs-doctype {
+  color: #000080;
+}
+
+.hljs-attribute,
+.hljs-number {
+  color: #027d7d;
 }
 
 
